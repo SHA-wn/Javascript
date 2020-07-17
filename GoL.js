@@ -33,7 +33,7 @@ function display(Arr, size) {
   }
 }
 
-//Matrix creator - returns a fresh matrix. In this case, filled with zeros.
+//Matrix creator - returns a fresh matrix.
 function Macreate(size) {
   var Matrix = new Array(size);
   for (i = 0; i < size; i++) {
@@ -60,7 +60,7 @@ for (i = 0; i < dimen; i++) {
 console.log("Here is the input array:");
 display(I, dimen);
 
-var O = Macreate(dimen);
+var O = Macreate(dimen);  //Output array
 
 for (i = 0; i < dimen; i++) {
   for (j = 0; j < dimen; j++) {
@@ -72,7 +72,7 @@ for (i = 0; i < dimen; i++) {
     } else if (c < 2) {
       O[i][j] = "-"; //Loneliness
     } else {
-      x = I[i][j];
+      x = I[i][j];  //Copying from I to O.
       O[i][j] = x;
     }
   }
